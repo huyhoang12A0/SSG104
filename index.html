@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Heaven</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #f8f9fa;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 50px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            background-color: #38bdf8;
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+        .hero button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #ff6b6b;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .hero button:hover {
+            background-color: #ff4b4b;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+        }
+        .food-gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .food-card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .food-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+        }
+        .food-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .food-card .food-info {
+            padding: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="./img/logo.png" alt="Logo" /> <!-- Add your logo image URL here -->
+            <h1>Food Heaven</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Foods</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="hero">
+        <form action = "test.php" method = "POST">
+            <h2>Search for Food</h2>
+            <input type="text" placeholder="Search for Food...">
+            <button type = "submit" required>Search</button>
+        </form>
+    </div>
+    <section class="section">
+        <h2>Explore Foods</h2>
+        <div class="food-gallery">
+            <a href="./test1.php" class="food-card">
+                <img src="./img/food1.png" alt="Food 1" /> <!-- Add image URL here -->
+                <div class="food-info">
+                    <h3>Food Name 1</h3>
+                    <p>Description of the food.</p>
+                </div>
+            </a>
+            <a href="#" class="food-card">
+                <img src="./img/food2.png" alt="Food 2" /> <!-- Add image URL here -->
+                <div class="food-info">
+                    <h3>Food Name 2</h3>
+                    <p>Description of the food.</p>
+                </div>
+            </a>
+            <a href="#" class="food-card">
+                <img src="./img/food3.png" alt="Food 3" /> <!-- Add image URL here -->
+                <div class="food-info">
+                    <h3>Food Name 3</h3>
+                    <p>Description of the food.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
